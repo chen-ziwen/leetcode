@@ -20,7 +20,7 @@ var buildTree = function (inorder, postorder) {
     // 获取后序左子树节点
     const postLeftNode = postorder.slice(0, rootIdx);
     // 获取后序右子树节点
-    const postRightNode = postorder.slice(rootIdx, n - 1)
+    const postRightNode = postorder.slice(rootIdx, n - 1);
     // 构建左子树
     const left = buildTree(inorLeftNode, postLeftNode);
     // 构建右子树
